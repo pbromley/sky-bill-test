@@ -1,0 +1,55 @@
+.main-item {
+  display: grid;
+  grid-template-areas: 'item-title-container' 'details';
+  margin-bottom: 10px;
+
+  .item-title-container {
+    padding: 10px;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-areas: 'item-title cost';
+
+    .item-title {
+      grid-area: item-title;
+    }
+
+    .cost {
+      grid-area: cost;
+      text-align: end;
+    }
+  }
+  .details {
+    grid-area: details;
+    padding: 10px;
+    font-size: 0.8em;
+    border: 1px solid lightgray;
+    border-top: none;
+  }
+
+  &.total {
+    .item-title-container {
+      background-color: transparent;
+    }
+    .details {
+      text-align: end;
+      border: none;
+    }
+  }
+}
+
+.statement {
+  display: grid;
+  grid-template-areas: 'from to';
+  padding: 10px;
+  .statement-label {
+    font-family: 'Sky Medium', Helvetica, sans-serif;
+  }
+  .statement-from {
+    grid-area: from;
+    text-align: end;
+    margin-right: 10px;
+  }
+  .statement-to {
+    grid-area: to;
+  }
+}

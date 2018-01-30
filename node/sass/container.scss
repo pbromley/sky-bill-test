@@ -1,0 +1,20 @@
+.content {
+  grid-area: content;
+  margin: 0 50px;
+}
+
+.bill-container {
+  display: grid;
+  grid-template-areas: 'header' 'content';
+  grid-template-rows: 85px auto;
+  grid-row-gap: 10px;
+}
+
+@media(max-width: 400px) {
+  .content {
+    margin: 0 10px;
+  }
+  .bill-container{
+    grid-template-rows: 55px auto;
+  }
+}

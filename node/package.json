@@ -1,0 +1,70 @@
+{
+  "name": "bill-test",
+  "version": "0.0.1",
+  "description": "App to serve and render a bill",
+  "main": "src/server/runServer.js",
+  "engines": {
+    "node": "8.9.4"
+  },
+  "scripts": {
+    "build": "./node_modules/gulp/bin/gulp.js build",
+    "test": "./node_modules/gulp/bin/gulp.js test",
+    "test-coverage": "./node_modules/gulp/bin/gulp.js test-coverage",
+    "start": "node src/server/runServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "contributors": [
+    {
+      "name": "Philip Bromley",
+      "email": "pbromley@nebulon-technologies.co.uk"
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "fs-sync": "1.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "chai": "3.5.0",
+    "deep-clone": "3.0.2",
+    "deep-freeze": "0.0.1",
+    "es6-promise": "4.2.4",
+    "fetch-mock": "6.0.0",
+    "graceful-fs": "4.1.11",
+    "gulp": "3.9.1",
+    "gulp-ejs": "3.0.1",
+    "gulp-istanbul": "1.1.1",
+    "gulp-mocha": "3.0.1",
+    "gulp-nodemon": "2.2.1",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "isparta": "4.0.0",
+    "jsdom": "11.1.0",
+    "jsdom-global": "3.0.2",
+    "minimatch": "3.0.3",
+    "mocha": "3.2.0",
+    "mock-require": "2.0.2",
+    "moment": "2.18.1",
+    "portfinder": "1.0.13",
+    "prop-types": "15.5.8",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-test-renderer": "16.2.0",
+    "shortid": "2.2.8",
+    "sinon": "2.1.0",
+    "supertest": "3.0.0",
+    "webpack": "3.10.0",
+    "webpack-stream": "3.2.0"
+  }
+}

@@ -1,0 +1,11 @@
+.call-charges {
+  .call-item-title {
+    margin-bottom: 10px;
+  }
+  li {
+    display: flex;
+    .call-item {
+      width: 100px;
+    }
+  }
+}

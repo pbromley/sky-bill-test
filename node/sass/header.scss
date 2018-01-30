@@ -1,0 +1,33 @@
+.bill-header {
+  grid-area: header;
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  .icon-container {
+    width: 75px;
+    img {
+      width: 75px;
+    }
+  }
+  .title-container {
+    display: flex;
+    width: calc(100% - 135px);
+    justify-content: center;
+  }
+}
+
+@media(max-width: 400px){
+  .bill-header {
+    margin: 0 10px;
+    .icon-container {
+      width: 55px;
+      img {
+        width: 45px;
+      }
+    }
+    .title-container{
+      width: calc(100% - 100px);
+    }
+  }
+}
